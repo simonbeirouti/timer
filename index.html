@@ -11,7 +11,7 @@
         align-items: center;
         height: 100vh;
       }
-      
+
         #countdown {
             font-size: 32px;
             font-weight: bold;
@@ -40,7 +40,7 @@
             const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-            document.getElementById("countdown").innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+            document.getElementById("countdown").innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
         }, 1000);
     </script>
 </body>
